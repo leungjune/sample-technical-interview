@@ -19,7 +19,7 @@ Birthday cake with 10 blown out candles
 
 =end
 
-require "active_support"
+require "active_support/all"
 
 class BirthdayCake
   attr_accessor :age, :lit
@@ -48,7 +48,7 @@ class BirthdayCake
   end
 
   def greet
-    "Happy #{self.age} Birthday!"
+    "Happy #{self.age.ordinalize} Birthday!"
   end
 
   def sing
